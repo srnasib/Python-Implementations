@@ -1,0 +1,18 @@
+fname = input("Enter file name: ")
+fh = open(fname)
+lst=[]
+lst1=[]
+c= fh.read()
+lst = list()
+a=c.rstrip()
+b=a.split()
+
+for i in b :
+   lst.append(i)
+
+for d in lst :
+    if d not in lst1 :
+     lst1.append(d)
+        
+sor=lst1.sort()        
+print(lst1)
